@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          function Dado() {
+        let resultado = Math.floor(Math.random() * 6) + 1;
+        return resultado;
+    
+}
+document.getElementById("resultado").innerHTML = "O resultado do lançamento é igual a : " + resultado;
+</script>
+<body>
+<h1>Lançamento do Dado</h1>
+<h3>Clique no botão para lançar o dado</h3>
+</head>
+<body>
+    <button onclick="Dado()">LANÇAR O DADO</button>
+    <p id="resultado"></p>
+</body>
+</html>
